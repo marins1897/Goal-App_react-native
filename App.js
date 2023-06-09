@@ -40,6 +40,7 @@ export default function App() {
                 modalOpen={ modalOpen }
                 endGoalHandler={ endGoalHandler } />
       <View style={styles.goalsContainer}>
+        
         <FlatList data={allGoals} 
                   renderItem={(itemData) => {
                         return <GoalItem item = { itemData.item.text }
